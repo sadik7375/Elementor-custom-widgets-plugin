@@ -1,0 +1,50 @@
+/* elementor-logo-slider.css */
+
+.custom-logo-slider-wrapper {
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.custom-logo-slider .logo-slide {
+    text-align: center;
+}
+
+.custom-logo-slider .logo-slide img {
+    max-height: 50px;
+    opacity: 0.6;
+    transition: opacity 0.3s ease, filter 0.3s ease;
+    filter: grayscale(100%);
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.custom-logo-slider .logo-slide img:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+}
+
+/* Shadow overlays */
+.custom-logo-slider-wrapper::before,
+.custom-logo-slider-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 80px; /* You can adjust this */
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
+    opacity: 0.9;
+}
+
+.custom-logo-slider-wrapper::after {
+    right: 0;
+    transform: scaleX(-1); /* Flip gradient to go left */
+}
+
+
+

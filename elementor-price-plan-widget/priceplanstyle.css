@@ -1,0 +1,94 @@
+/* Price Plan Widget Styles */
+.price-plan-widget {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.price-plan {
+    background-color: #f9f9ff; /* Light background color */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    width: calc(25% - 20px); /* Adjust based on number of plans */
+    text-align: center;
+}
+
+.price-plan.active {
+    background-color: #e6f7ff; /* Highlight active plan */
+}
+
+.price-plan:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.plan-header {
+    margin-bottom: 20px;
+}
+
+.plan-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.plan-price {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+.plan-features ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.plan-features li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #666;
+}
+
+.plan-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.plan-button a:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+
+.price-icon {
+    display: flex
+;
+    align-items: flex-start;
+}
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .price-plan {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .price-plan {
+        width: 100%;
+    }
+}

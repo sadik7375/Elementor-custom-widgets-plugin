@@ -1,0 +1,103 @@
+/* Carousel Slide Item */
+.slide-item {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Icon in circle */
+  .icon-wrapper {
+    background-color: #eaf3ff;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon-wrapper img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  /* Title styling */
+  .slide-title {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.4;
+    color: #ffffff;
+    margin: 0 0 5px;
+  }
+  
+  /* Subtitle styling */
+  .slide-subtitle {
+    font-size: 13px;
+    color: #d2d8f5;
+    margin: 0;
+  }
+  
+  /* Optional: Carousel Dots */
+  .owl-dots .owl-dot span {
+    background: #ccc;
+    width: 8px;
+    height: 8px;
+    margin: 5px 3px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background 0.3s;
+  }
+  
+  .owl-dots .owl-dot.active span {
+    background: #ffffff;
+  }
+  
+  owl-dots{
+
+display: flex !important;
+justify-content: center;
+
+
+
+  }
+
+
+
+/* Navigation buttons */
+.owl-nav {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.owl-nav button.owl-prev,
+.owl-nav button.owl-next {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    pointer-events: all;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.owl-nav button.owl-prev:hover,
+.owl-nav button.owl-next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.owl-nav button.owl-prev {
+    margin-left: 10px;
+}
+
+.owl-nav button.owl-next {
+    margin-right: 10px;
+}
